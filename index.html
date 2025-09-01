@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+
+        <figure>
+            <img src="IMAGENS/banner.jpeg" alt="imagem">
+        </figure>
+
+    </header>
+
+    <section class="imagem"
+
+    <h1> Fale conosco </h1>
+
+    </section>
+
+    <section class="Contato">
+
+        <form>
+
+            <fieldset id="Pessoais">
+
+                <legend>DADOS PESSOAIS</legend>
+
+                <P>Nome: <input type="text" name="nNome" id="iNome" size="20" maxlength="40" placeholder="Nome completo"></P>
+                <P>E-mail: <input type="text" name="nEmail" id="iEmail" size="20" maxlength="60" placeholder="Email de contato"></P>
+                <P>Senha: <input type="password" name="nSenha" id="iSenha" size="20" maxlength="11" placeholder="Até 11 caracteres"></P>
+
+
+            </fieldset>
+
+            <fieldset id="Civil">
+
+                <legend>ESTADO CIVIL</legend>
+
+                    <P> Casado <input type="radio" name="nCivil" id="iCasado"/> <label for="iCasado"></label> </P>
+
+                    <p> Solteiro <input type="radio" name="nSolteiro" id="iSolteiro"> <label for="iSolteiro"></label></p>
+
+                    <p> Outro <input type="radio" name="nOutro" id="iOutro"> <label for="iOutro"></label></p>
+
+
+            </fieldset> 
+
+            <p>Nascimento: <input type="date" name="nData" id="iData"> </p>
+
+            </fieldset>
+
+            <fieldset id="Endereço">
+
+                <legend>ENDEREÇO</legend>
+
+                <P>Logradouro: <input type="text" name="Rua" id="iRua" size="20" maxlength="60" placeholder="Rua, Av,(...)"></P>
+
+                <P>Numero: <input type="number" name=nNum" id="iNum" min="0" max="9999"></P>
+
+                <P>Complemento: <input type="number" name="iCompl" id="iCompl" min="0" maxlength="9999"></P>
+
+                <P>Cidade: <input type="text" name="Cidade" id="iCidade" size="20" maxlength="60" placeholder="Sua cidade"></P>
+
+                <P>Estado: <input type="text" name="Estado" id="iEstado" size="20" maxlength="20" placeholder="UF"></P>
+
+            </fieldset><br>
+
+            <br>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+
+    </section>
+</body>
+</html>
