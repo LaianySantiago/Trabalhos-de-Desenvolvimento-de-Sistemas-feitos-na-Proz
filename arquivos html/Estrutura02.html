@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+</html lang = "pt-br">
+
+<body>
+
+   <h1> Document Object Model (DOM) <h1>
+   <p> Podemos selecionar mais de uma coisa </p>
+   <p> Vai ser fácil entender essa metéria! </p>
+   <p> Curso <strong> Técnico em Desenvolvimento de Sistemas </strong> </p>
+
+<div id="texto"> Este texto é uma div! </div>
+
+<div name="texto2"> Este texto 02 é uma "name" </div>
+
+<div class="texto3"> Este texto 03 é uma "classe" </div>
+
+
+    </script>
+    <div class ="texto3"> este texto 03 é uma "classe"</div>
+
+     <script>
+      var mensagem = window.document.getElementById ('texto')
+      mensagem.style.color = "blue"
+      window.alert(mensagem.innerText)
+      window.alert(mensagem.innerHTML)
+      mensagem,innerText = "Este texto foi modificado por - Não é uma DIV!"

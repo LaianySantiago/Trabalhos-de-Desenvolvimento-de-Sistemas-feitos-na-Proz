@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<div class = "janela"> <!-- Folha de Estilo CSS -->
+
+<script>
+alert('Responda por favor as perguntas a seguir. Muito Obrigado!')
+
+            var nome = String(window.prompt('Digite seu primeiro nome'))
+            var idade = Number.parseFloat(window.prompt('Digite a sua idade'))
+            var cidade = String(window.prompt('Digite a cidade em que você mora atualmente'))
+            var endereco = String(window.prompt('Qual o seu endereço'))
+            var telefone = String(window.prompt('Digite o seu telefone fixo'))
+            var celular = String(window.prompt('Digite o seu telefone celular'))
+            var mae = String(window.prompt('Qual o nome completo da sua mãe'))
+            var pai = String(window.prompt('Qual o nome completo do seu pai'))
+
+                document.write('<strong> Bem-vindo ' + nome + ' </strong>! Desejamos que sim! <br><br>')
+                document.write('Tudo bem? Você tem ' + idade + ' anos <br>')
+                document.write('Você informou que é filho do sr. ' + pai + ' e da sra. ' + mae + ' <br>')
+                document.write('Atualmente você mora na cidade de ' + cidade + '<br>')
+                document.write('O endereço da sua residência é: ' + endereco + ' <br>')
+                document.write('Podemos te contatar pelos telefones ' + telefone + ' e ' + celular + ', correto?<br>')
+                document.write('Prazer em te conhecer e seja bem-vindo ao nosso site!')
+
+            </script>
+            </div>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang ="pt-BR">
+
+<head>
+    <meta charset="utf-8"
+    <title> pagina incial </title>
+</head>
+
+<body>
+    <h1> Document Object Model (DOM) </h1>
+    <p> Podemos selecionar mais de um objeto. </p>
+    <p> Vai ser facil entender essa matéria!</p>
+    <p> Curso <strong> Técnico em desenvolvimento de Sistemas </strong></p>
+
+    <div id="texto"> Este texto é uma div! </div>
+
+    <div name="texto2"> Este texto 02 é um "name"</div>
+
+    <div class="texto3"> Este texto 03 é uma "classe" </div>
+
+    <script>
+        var mensagem = window.document.getElementById('texto')
+        mensagem.style.color = "blue"
+        window.alert(mensagem.innerText)
+        window.alert(mensagem.innerHTML)
+        mensagem.innerText = "este texto foi modificado por - Não é uma DIV!"
+    </script>
+
+    <script>
+        var nome = window.document.getElementsByName('texto2')[0]
+        window.alert(nome.innerHTML)
+        nome.innerText = "Mudei o texto"
+
+        var clas = window.document.getElementsByClassName('texto3')[0]
+        window.alert(clas.innerText)
+        clas.style.color = 'blue'
+    </script>
+</body>
+</html>

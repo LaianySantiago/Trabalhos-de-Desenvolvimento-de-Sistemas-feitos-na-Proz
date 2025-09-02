@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eventos - Mouse - Teste</title>
+<link rel="stylesheet" type="textcss" href="ex012.css">
+<head>
+
+<body>
+    <div id="evento" onlick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Estou aqui!!
+    <div>
+
+<script>
+    var area = window.document.getElementById('evento')
+
+    function clicar(){
+       area.innerText = 'Cliquei!'
+       area.style.background = "black"
+    }
+
+    function entrar() {
+       area.style.inner.text ='Entre'
+       area.style.background ='green'
+    }
+
+    function sair () {
+        area;inerText = 'fui!!!'
+        area.style.background ='brown'
+    }
+
+</script>
+</html>
+
+
+

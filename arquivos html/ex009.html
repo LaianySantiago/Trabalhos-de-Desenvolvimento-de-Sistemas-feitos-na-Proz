@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title> Document </title>
+</head>
+
+<body>
+    <h1> Document Object Model (DOM) </h1>
+    <p> Podemos selecionar mais de um objeto. </p>
+    <p> Curso <strong> Técnico em desenvolvimento de Sistemas </strong></p>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.alert(p1.innerText)
+        document.write("O texto selecionado foi o: " + p1.innerText)
+        p1.style.color = 'red'
+
+        var p2 = window.document.getElementsByTagName('p')[1]
+        document.write(p2.innerHTML)
+        p2.style.color = "blue"
+        
+
+        p1.style.background = 'black'
+        p1.style.color = 'white'
+        p1.style.padding = "5px"
+
+        var fundo = window.document.body
+        fundo.style.background = "blue"
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Financiamento</title>
+</head>
+
+<body>
+    <h2>Financiamento</h2>
+
+    <p>Digite seu salário:</p>
+    <input type="number" id="salario" placeholder="Ex: 3000"><br><br>
+
+    <p>Digite o valor do financiamento:</p>
+    <input type="number" id="financiamento" placeholder="Ex: 12000"><br><br>
+
+    <button onclick="verificar()">Verificar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function verificar() {
+            // usando var em vez de let/const
+            var salario = Number(document.getElementById('salario').value);
+            var financiamento = Number(document.getElementById('financiamento').value);
+            var resultado = document.getElementById('resultado');
+
+            if (financiamento <= salario * 5) {
+                resultado.textContent = "Financiamento concedido";
+            } else {
+                resultado.textContent = "Financiamento negado";
+            }
+        }
+    </script>
+</body>
+
+</html>

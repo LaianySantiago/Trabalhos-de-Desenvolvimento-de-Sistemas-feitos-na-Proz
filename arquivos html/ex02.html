@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "pt-BR"
+<head
+<script>
+
+    function verificar() {}
+        var idade = window.document.querySelector('input#idade')
+        var res = Number(idade.value)
+        var txt = window.document.querySelector('div#texto')
+
+
+        if (res < 16) {
+            txt.innerHTML = "<p> Você é criança </p>"
+            txt.innerHTML += "<p> Não tem idade para votar </p>"
+
+}
+
+else if (res < 25) {
+    txt.innerHTML ="<p> Você é jovem </p>"
+    txt.innerHTML += "<p> Tem idade para votar </p>"
+}
+    

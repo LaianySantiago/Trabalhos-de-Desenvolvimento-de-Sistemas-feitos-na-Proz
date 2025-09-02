@@ -1,0 +1,18 @@
+<script>
+
+    var horario = new date()
+
+    var dia = horario.getDate()
+    var mes = horario.getMonth()
+    var ano = horario.getFullYear()
+    
+    var mesAjuste = mes + 1
+
+    var hora = horario.getHours()
+    var min = horario.getMinutes()
+    var segundo = horario.getSeconds()
+
+    if (hora < 12) {
+        document.write ('Hoje é<strong> ${dia} / ${mesAjuste} / ${ano} </strong> <br>')
+    }
+
